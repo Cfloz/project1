@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="stockticker.js"></script>
+  <link rel="stylesheet" href="project1.css">
+
+  <title>Document</title>
+</head>
+<body>
+  <h1>Welcome to StockPicker!</h1>
+  <p>StockPicker is a web application that allows you to search for stocks and view their current price and other information.</p>
+  <p>Enter a stock symbol below to get started!</p>
+  <dl>
+    <dt>Stock</dt>
+    <dd id="ticker"></dd>
+  
+    <dt>Price</dt>
+    <dd id="price"></dd>
+    
+  </dl>
+    <form>
+      <!--input type="text" id="stockSymbol" placeholder="Enter Stock Symbol"/ -->
+      <input id="formTicker" type="text" placeholder="Enter Ticker"/>
+      <input type="submit" value="Get Stock information" />
+    </form>
+
+</body>
+</html>
