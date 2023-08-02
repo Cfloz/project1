@@ -20,7 +20,7 @@ const fetchData = () => {
           let tickerValue = document.querySelector('#ticker');
           tickerValue.innerHTML = ticker;
           let priceValue = document.querySelector('#price');
-          priceValue.innerHTML = price;
+          priceValue.innerHTML = `$${price}`;
       })
       .catch(error => {
           console.log(error);

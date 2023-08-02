@@ -7,9 +7,9 @@
 }
 */
 body{
-  background-color: #f2f2f2;
+  background-color: #0b0a0a;
   background-image: url("updatedVideoGif.gif");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -45,12 +45,17 @@ body, html{
 }
 
 .container {
-  max-width: 400px;
+  max-width: 25%;
   margin: 50px auto;
-  background-color: #fff;
+  background-color: #ffffff9a;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
   position: relative;
-  top: 40%;
+  top: 30%;
+  left: 20%;
+}
+
+.paragraph{
+  text-align: center;
 }
