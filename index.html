@@ -10,6 +10,7 @@
 </head>
 <body>
   <div class="container">
+    
   <div class="form">
   <h1 class="title">Welcome to StockPicker!</h1>
   <p class="paragraph">StockPicker is a web application that allows you to search for stocks and view their current price and other information.</p>
@@ -25,11 +26,15 @@
   </dl>
 
     <p>Enter Stock Name:</p>
-
+    
+    <div class="Logs" id="input-log"></div>
 <input class="stockText" type="text" id="tickerInput" value="" placeholder="Enter Stock Ticker" oninput="convertToCapitalLetters(event)"> 
 
-<button onclick="fetchData()">Submit</button>
+<button class="button" onclick="fetchData()">Submit</button>
+
+
 </div>
+
 </div>
 
 </body>

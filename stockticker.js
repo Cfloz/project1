@@ -1,10 +1,10 @@
+let inputArray = [];
+let inputLimit = 5; // specify the input limit
+
 const fetchData = () => {
     const apiKey = "Adj2Hk_m_1i3ZpI3LvoI3tTXNWj5Lt33";
     const ticker = document.getElementById("tickerInput").value;
     const endPoint = `https://api.polygon.io/v2/aggs/ticker/${ticker}/prev?adjusted=true&apiKey=${apiKey}`;
-
-    // Below is the link teseter, uncomment to show URL.
-    //document.getElementById("displayEndPoint").innerHTML = endPoint;
 
     fetch(endPoint)
       .then(response => {
@@ -21,14 +21,24 @@ const fetchData = () => {
           tickerValue.innerHTML = ticker;
           let priceValue = document.querySelector('#price');
           priceValue.innerHTML = `$${price}`;
+          let logData = `Stock: ${ticker}, Price: $${price}`;
+          inputArray.unshift(logData);
+
+          if (inputArray.length > inputLimit) {
+            inputArray.pop();
+          }
+
+          let div = document.getElementById('input-log');
+          div.innerHTML = inputArray.join('<br>');
       })
       .catch(error => {
           console.log(error);
       });
-  };
+      
+      document.getElementById("tickerInput").value = '';
+};
 
-//Capitalizes the input on the submit button
-  function convertToCapitalLetters(event) {
+function convertToCapitalLetters(event) {
     const inputElement = event.target;
     const inputValue = inputElement.value;
     inputElement.value = inputValue.toUpperCase();

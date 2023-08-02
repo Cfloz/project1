@@ -1,15 +1,7 @@
-/*.stockText {
-  text-transform: uppercase;
-
-}
-/*.stockText::placeholder {
-  text-transform: capitalize
-}
-*/
 body{
   background-color: #0b0a0a;
   background-image: url("updatedVideoGif.gif");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -45,17 +37,51 @@ body, html{
 }
 
 .container {
-  max-width: 25%;
+  max-width: 50%;
   margin: 50px auto;
   background-color: #ffffff9a;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  position: relative;
-  top: 30%;
-  left: 20%;
+  padding: 1.5rem;
+  
 }
 
 .paragraph{
   text-align: center;
+}
+
+.button{
+  color: white;
+  background-color: #007bfff9;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+  transition-duration: 0.2s;
+}
+
+.button:hover {
+  background-color: #0069D9;
+  color: white;
+}
+
+.stockText {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  width: 100%;
+  transition-duration: 0.2s;
+  box-sizing: border-box;
+  margin-bottom: 1px;
+}
+
+stockText {
+  border-color: #007BFF;
+  box-shadow: 0 0 5px #007BFF;
+  outline: none;
 }
