@@ -1,15 +1,17 @@
 
 
 
-const fetchData = () => {
-    const enterData = () => {
-        userInput = document.querySelector('#formTicker').value;
-        return userInput;
+//const fetchData = () => {
 
 
-    }
+window.onload = (event) => {
+    
+    document.querySelector('form').addEventListener('submit', (event) => {
+    const userInput = document.querySelector('input[type="text"]').value;
+    event.preventDefault();
 
-    const endPoint = "https://api.polygon.io/v2/aggs/ticker/MSFT/prev?adjusted=true&apiKey=Adj2Hk_m_1i3ZpI3LvoI3tTXNWj5Lt33";
+
+    const endPoint = `https://api.polygon.io/v2/aggs/ticker/${userInput}/prev?adjusted=true&apiKey=Adj2Hk_m_1i3ZpI3LvoI3tTXNWj5Lt33`;
 
     fetch(endPoint)
         .then(response => {
@@ -35,5 +37,7 @@ const fetchData = () => {
         .catch(error => {
             console.log(error);
         });
-};
-fetchData();
+});
+;
+}
+window.onload();
