@@ -5,3 +5,8 @@
 /*.stockText::placeholder {
   text-transform: capitalize
 }
+*/
+body{
+  background-color: #f2f2f2;
+  background-image: url("wolf-of-wall-street\ background\ pic.jpg");
+}

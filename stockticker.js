@@ -26,3 +26,10 @@ const fetchData = () => {
           console.log(error);
       });
   };
+
+
+  function convertToCapitalLetters(event) {
+    const inputElement = event.target;
+    const inputValue = inputElement.value;
+    inputElement.value = inputValue.toUpperCase();
+}
