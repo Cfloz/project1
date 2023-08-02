@@ -27,7 +27,7 @@ const fetchData = () => {
       });
   };
 
-
+//Capitalizes the input on the submit button
   function convertToCapitalLetters(event) {
     const inputElement = event.target;
     const inputValue = inputElement.value;

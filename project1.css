@@ -8,5 +8,49 @@
 */
 body{
   background-color: #f2f2f2;
-  background-image: url("wolf-of-wall-street\ background\ pic.jpg");
+  background-image: url("updatedVideoGif.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body, html{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container{
+  overflow: hidden;
+}
+
+#ticker{
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: auto;
+  color: #000000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.class {
+  animation: spinner 4s linear infinite;
+}
+
+.title{
+  text-align: center;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: relative;
+  top: 40%;
 }
