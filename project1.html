@@ -10,9 +10,10 @@
 </head>
 <body>
   <h1>Welcome to StockPicker!</h1>
-  <p>StockPicker is a web application that allows you to search for stocks and view their current.</p>
+  <p>StockPicker is a web application that allows you to search for stocks and view their current price and other information.</p>
   <p>Enter a stock symbol below to get started!</p>
   <dl>
+    
     <dt>Stock</dt>
     <dd id="ticker"></dd>
   
@@ -20,10 +21,14 @@
     <dd id="price"></dd>
     
   </dl>
-    <form>
-      <input id="formTicker" type="text" placeholder="Enter Ticker"/>
-      <input id="buttonTicker" type="submit" value="Get Stock information" />
-    </form>
+
+    <p>Enter Stock Name:</p>
+
+<input class="stockText" type="text" id="tickerInput" value="" placeholder="Enter Stock Ticker">
+
+<button onclick="fetchData()">Submit</button>
+
+
 
 </body>
 </html>

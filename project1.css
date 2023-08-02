@@ -1,7 +1,7 @@
-body{
-  /*background-image: url("https://assets.playbill.com/editorial/_articleLeadImage/a728180f0359e96ac3b95916cda901ce-the-wolf-of-wall-street.-London-immersive-production-2019.-Credit-photography-by-Michael-Wharley-design-by-Rebecca-Pitt.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: blue;
+/*.stockText {
+  text-transform: uppercase;
+
+}
+/*.stockText::placeholder {
+  text-transform: capitalize
 }
